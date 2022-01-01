@@ -26,7 +26,7 @@
 
 #define NUM_COLORS       3 /* number of colors per segment */
 #define MAX_LED          1000   // Cho phép sử dụng tối đa 1000 bóng Led
-
+#define MAX_LED_COLUM    200
 // Màu sắc cơ bản cho LED */
 #define RED             (uint32_t)0xFF0000
 #define GREEN           (uint32_t)0x00FF00
@@ -80,6 +80,7 @@ public:
     uint16_t    _numLedOnColum;       // Số Led trên 1 cột
     uint8_t     _numColum;            // Số Cột.
     uint8_t     _wiringType;          // Kiểu đi dây LED: Đi nối tiếp hoặc song song.     
+    uint8_t     _brightLed;
   }_UserLed;
   _UserLed  UserLed;
 
